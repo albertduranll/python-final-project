@@ -1,0 +1,12 @@
+
+# Crear directorio del entorno virtual (hay que estar dentro del root del proyecto)
+python3 -m venv .venv
+
+# Acceder al entorno virtual del proyecto.
+source .venv/bin/activate
+
+# Instalar dependencia
+pip3 install /*nombre dependencia*/
+
+# Crear un archivo que nos muestre las dependencias del entorno virtual.
+pip freeze > "requirements.txt"
